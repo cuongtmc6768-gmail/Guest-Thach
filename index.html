@@ -20,6 +20,58 @@
 :root{--blue:#062d79;--blue2:#0759c9;--green:#07983a;--green2:#56c900;--orange:#ef9b00;--text:#17304f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#eef4f8}a{text-decoration:none;color:inherit}.wrap{max-width:1500px;margin:auto}.container{width:min(1440px,94%);margin:auto}
 
+    /* Top Big Call CTA */
+    .big-call-wrapper {
+      text-align: center;
+      margin-top: -22px;
+      padding: 0 15px;
+      position: relative;
+      z-index: 10;
+    }
+        .big-call-box {
+      background: linear-gradient(135deg, #246789 0%, #246789 100%);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 32px;
+      border-radius: 50px;
+      box-shadow: 0 8px 24px rgb(87, 221, 255);
+      animation: pulse-yellow 2.5s infinite;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 440px;
+      border: 2px solid #ffffff;
+    }
+
+    .big-call-box i {
+      font-size: 26px;
+      animation: shake-soft 2s infinite ease-in-out;
+      color: #02fc23;
+    }
+
+    .big-call-box:hover, .big-call-box:active {
+      transform: translateY(-2deg);
+      box-shadow: 0 12px 28px rgba(87, 221, 255);
+    }
+      /* Mobile Responsive Optimizations */
+    @media screen and (max-width: 768px) {
+      .main-title {
+        font-size: 22px;
+      }
+
+    .big-call-box {
+        font-size: 18px;
+        padding: 14px 20px;
+      }
+      .big-call-box i {
+        font-size: 22px;
+      }
+    }
 /* HEADER */
 .header{background:linear-gradient(90deg,#061f57,#063c96 55%,#05255e);color:#fff;position:sticky;top:0;z-index:100;box-shadow:0 3px 15px #001d4d55}.header-inner{height:68px;display:flex;align-items:center;gap:18px}.logo{align-self:stretch;width:310px;display:flex;align-items:center;padding:8px 22px;background:#061b52;border-right:3px solid #00b7ff;border-radius:0 42px 42px 0}.logo .car{font-size:44px}.logo strong{font-size:36px;font-style:italic;color:#65d33c;line-height:1}.logo small{display:block;color:#ffd800;font-weight:900;font-size:19px;margin-left:7px}.nav{display:flex;align-items:center;gap:4px;flex:1}.nav a{padding:23px 13px 20px;font-size:14px;font-weight:800;white-space:nowrap;border-bottom:3px solid transparent}.nav a.active,.nav a:hover{border-color:#60d226;color:#fff}.header-actions{display:flex;gap:10px}.head-btn{min-width:175px;padding:9px 14px;border-radius:17px;color:#fff;text-align:center;font-weight:900;line-height:1.05}.head-btn small{display:block;font-size:11px;margin-top:3px}.call{background:linear-gradient(#58d50c,#039534)}.zalo{background:linear-gradient(#187cf2,#0752cf)}.menu{display:none}
 
@@ -79,14 +131,22 @@
    <div class="taxi-word">Taxi</div>
    <h1 class="hero-title">RẠCH GIÁ <span class="bolt">⚡</span></h1>
    <div class="tagline">AN TOÀN – ÊM ÁI – THÂN THIỆN MÔI TRƯỜNG 🌿</div>
+  </div>
+  
    <div class="benefits">
     <div class="benefit">🌿 <b>XE ĐIỆN HIỆN ĐẠI</b><span>Êm ái – Tiết kiệm<br>Không khói xăng</span></div>
     <div class="benefit">🛡️ <b>AN TOÀN TUYỆT ĐỐI</b><span>Tài xế kinh nghiệm<br>Lái xe cẩn thận</span></div>
     <div class="benefit">🌱 <b>THÂN THIỆN MÔI TRƯỜNG</b><span>Giảm khí thải<br>Bảo vệ môi trường</span></div>
     <div class="benefit">◉ <b>PHỤC VỤ 24/7</b><span>Có mặt nhanh chóng<br>Mọi lúc – Mọi nơi</span></div>
    </div>
-   <div class="cars-photo"><img src="data:image/jpeg;base64,/" alt="Đội xe MNT Taxi Rạch Giá"></div>
   </div>
+
+  <!-- Big Call Box Banner -->
+ <div class="big-call-wrapper">
+    <a href="tel:0924000979" class="big-call-box" title="Gọi ngay Taxi Rạch Giá">
+      <i class="fas fa-phone-volume"></i> GỌI XE: 0924 000 979
+    </a>
+</div>
   <div class="booking" id="dat-xe">
    <div class="booking-head"><h2>ĐẶT XE NGAY</h2><p>Nhanh chóng – Thuận tiện – 24/7</p></div>
    <form class="form" id="form">
